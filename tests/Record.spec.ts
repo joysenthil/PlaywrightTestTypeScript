@@ -18,7 +18,7 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: 'Sign in', exact: true }).click();
   });
   await test.step('Validating error message', async () => {
-    await expect(page.getByRole('alert')).toContainText('Incorrect username  password.');
+    await expect(page.getByRole('alert')).toContainText('Incorrect username  or password.');
   });
 });
 

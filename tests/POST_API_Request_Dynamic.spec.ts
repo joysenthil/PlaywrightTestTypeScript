@@ -37,7 +37,7 @@ expect(jsonPostAPIResponse.booking.bookingdates).toHaveProperty('checkout');
 //VadlidateAPI response body
 expect(jsonPostAPIResponse.bookingid).toBeGreaterThan(0);
 expect(jsonPostAPIResponse.booking.firstname).toBe("Cypress typescript by testers talk");
-expect(jsonPostAPIResponse.booking.lastname).toBe("javascript    typescript by testers talk");
+expect(jsonPostAPIResponse.booking.lastname).toBe("javascript typescript by testers talk");
 expect(jsonPostAPIResponse.booking.bookingdates.checkin).toBe("2018-01-01");
 expect(jsonPostAPIResponse.booking.bookingdates.checkout).toBe("2019-01-01");
 });
