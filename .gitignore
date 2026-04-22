@@ -6,3 +6,9 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+/json-test-report.json
+/junit-test-report.xml
+/allure-report
+/allure-results
+/.DS_Store
+/test-data/.DS_Store
