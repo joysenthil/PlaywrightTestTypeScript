@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('[3] record a test', { tag: ['@playwrightWithGitHubActions'] }, async ({ page }) => {
 
   await test.step('Navigating to URL', async () => {
     await page.goto('https://github.com/');
@@ -20,6 +20,15 @@ test('test', async ({ page }) => {
   await test.step('Validating error message', async () => {
     await expect(page.getByRole('alert')).toContainText('Incorrect username  or password.');
   });
+});
+
+
+test('[8] test2 will fail a test', { tag: ['@playwrightWithGitHubActions'] }, async ({ page }) => {
+
+  await page.goto('https://github.com/');
+  expect(true).toBe(false);
+
+
 });
 
 
