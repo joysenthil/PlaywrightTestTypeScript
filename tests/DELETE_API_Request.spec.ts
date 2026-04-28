@@ -4,7 +4,7 @@ import { getPOSTAPIRequestBody } from '../src/utils/APIHelper';
 
 import { faker } from '@faker-js/faker';
 
-import tokenAPIRequest from '../test-data/api_requests/Token_API_Request.json';
+import tokenAPIRequest from '../test-data/api_requests/TOKEN_API_Request.json';
 import putAPIRequestData from '../test-data/api_requests/PUT_API_Request.json';
 import patchAPIRequestData from '../test-data/api_requests/PATCH_API_Request.json';
 
