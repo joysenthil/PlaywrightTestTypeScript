@@ -1,9 +1,6 @@
-name: Playwright Tests
+name: Playwright Tests - Manual Trigger
 on:
- #  push:
- #  branches: [ main, master ]
     workflow_dispatch: # this enables manual trigger of the workflow from the GitHub UI
-
   jobs:
    test:
     timeout-minutes: 60
