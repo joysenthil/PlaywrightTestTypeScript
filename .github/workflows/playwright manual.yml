@@ -1,10 +1,11 @@
 name: Playwright Tests
 on:
-  push:
-    branches: [ main, master ]
-    workflow_dispatch:
+ #  push:
+ #  branches: [ main, master ]
+    workflow_dispatch: # this enables manual trigger of the workflow from the GitHub UI
+
   jobs:
-  test:
+   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
