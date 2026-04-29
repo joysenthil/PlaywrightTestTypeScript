@@ -2,8 +2,8 @@ name: Playwright Tests
 on:
   push:
     branches: [ main, master ]
- workflow_dispatch:
-jobs:
+    workflow_dispatch:
+  jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
