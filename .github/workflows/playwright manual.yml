@@ -1,7 +1,7 @@
 name: Playwright Tests - Manual Trigger
 on:
-    workflow_dispatch: # this enables manual trigger of the workflow from the GitHub UI
-  jobs:
+    workflow_dispatch:
+jobs:
    test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
@@ -14,7 +14,7 @@ on:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Run Playwright tests
+    - name: Run Playwright tests manually
       run: npx playwright test --grep playwrightWithGitHubActions
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
